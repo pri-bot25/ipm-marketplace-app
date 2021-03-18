@@ -1,0 +1,33 @@
+{
+  "VCAP_SERVICES": {
+    "user-provided": [
+      {
+        "binding_name": null,
+        "credentials": {
+          "client_id": "<client_id>",
+          "client_secret": "<client_secret>",
+          "url": "https://dev.api.ibm.com/marketplace/test/v2"
+        },
+        "ccp_url": "https://wwwstage.ibm.com/marketplace/purchase/configuration",
+        "instance_name": "marketplace-api-service",
+        "label": "user-provided",
+        "name": "marketplace-api-service",
+        "syslog_drain_url": "",
+        "tags": [],
+        "volume_mounts": []
+      },
+      {
+        "binding_name": null,
+        "credentials": {
+          "url": "https://wwwstage.ibm.com/marketplace/purchase/configuration"
+        },
+        "instance_name": "commerce-configuration-api-service",
+        "label": "user-provided",
+        "name": "commerce-configuration-api-service",
+        "syslog_drain_url": "",
+        "tags": [],
+        "volume_mounts": []
+      }
+    ]
+  }
+}

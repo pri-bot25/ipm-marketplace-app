@@ -1,0 +1,8 @@
+.bx--inline-notification {
+  max-width: 100rem !important;
+}
+
+.purchase-button .bx--loading {
+  position: absolute;
+  right: 0;
+}

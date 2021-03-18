@@ -1,0 +1,43 @@
+.quote--title {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.total--price {
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.margin-top25 {
+  margin-top: 25px;
+}
+
+.info--section {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+.info--section > span {
+  color: #fff;
+}
+
+.error--status {
+  background-color: #f54242;
+}
+.success--status {
+  background-color: #4bb542;
+}
+
+.back--link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back--link > svg {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 10px;
+}

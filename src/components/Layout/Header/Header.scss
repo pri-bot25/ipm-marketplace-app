@@ -1,0 +1,33 @@
+.bx--header__nav {
+  // override the default css prop, it hides the nav bar on small widths
+  //check proper ways  to ovveride carbon styles
+  display: inline-block !important;
+}
+
+a.bx--header__menu-item[role="menuitem"],
+a.bx--header__name,
+.bx--header__submenu > a {
+  cursor: pointer;
+}
+
+.navtab--active span {
+  color: rgba(255, 255, 255, 1);
+}
+
+li.navtab-element {
+  cursor: pointer;
+}
+
+li.navtab-element.navtab--active {
+  border-bottom: 3px solid white;
+}
+
+li.navtab-element.navtab--active span {
+  padding-top: 5px;
+}
+
+.subnav-header--placerholder {
+  height: 50px;
+  width: 400px;
+  display: inline-block;
+}

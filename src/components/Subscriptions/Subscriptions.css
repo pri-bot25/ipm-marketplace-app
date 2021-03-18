@@ -1,0 +1,11 @@
+.loading-spinner {
+  margin: auto;
+}
+
+.switch-error {
+  position: fixed;
+  z-index: 999;
+  top: 2.5rem;
+  width: 94rem;
+  min-width: 94rem;
+}
