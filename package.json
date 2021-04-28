@@ -9,9 +9,14 @@
     "pretest": "eslint .",
     "test": "eslint .",
     "client": "react-scripts start",
+    "build-clean":"rm -rf /build",
     "build-client": "react-scripts build",
     "test-client": "react-scripts test",
-    "eject-client": "react-scripts eject"
+    "eject-client": "react-scripts eject",
+    "login": "ibmcloud login --sso",
+    "target": "ibmcloud target -o dwengineering -s dev",
+    "push-dev": "ibmcloud cf push ipm-pivot-dev",
+    "deploy": "npm run build-client && npm run login && npm run target && npm run push-dev"
   },
   "eslintConfig": {
     "extends": "react-app"

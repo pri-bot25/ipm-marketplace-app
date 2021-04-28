@@ -1,0 +1,8 @@
+---
+applications:
+- name: ipm-pivot-stage
+  memory: 256M
+  host: ipm-pivot-stage
+  instances: 1
+  path: ../
+  domain: mybluemix.net
