@@ -7,7 +7,7 @@
 
 const https = require("../util/https");
 
-const commerceConfigurationURL = process.env.CCP_API;
+const commerceConfigurationURL = process.env.CCP_API || "https://wwwstage.ibm.com/marketplace/purchase/configuration";
 const commerceConfigurationAPIURL = commerceConfigurationURL + "/api/v1";
 
 exports.getEditionIdByPlan = async function (planId) {

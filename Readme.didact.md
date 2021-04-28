@@ -1,4 +1,6 @@
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 html,div,body{
     background-color:#1a1a1a;
@@ -26,7 +28,10 @@ pre{
     font:15px;
 }
 .content h4{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color:#1a1a1a;
     color:#fff;
+    font-size:28px;
 }
 .content h6{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -83,6 +88,7 @@ ol,ul,li{
   color:#0f62fe;
 }
 </style>
+</head>
 
 <body style="font-family: 'IBM Plex Sans', sans-serif;background-color:#1a1a1a;">
 <div style="font-family: 'IBM Plex Sans', sans-serif;background-color:#1a1a1a;">
@@ -106,45 +112,38 @@ ol,ul,li{
 </ul>
 </p><br/>
 
-<h3>Sample Application</h3>
-<br/>
-<p>Try out the Sample Application</p>
+<h3>IPM Marketplace Application</h3>
 
+<p>Try out the application</p>
 <ol>
-
 <li>Before you configure and launch the application, it is necessary to retrieve the API credentials from API Hub by following the steps:<br>
 <ol type='a'>
 <li>Login to <a title= "IBM API Hub" href="https://developer.sl.bluecloud.ibm.com/sso/displayname?lang=en_US&d=https%3A%2F%2Fdeveloper.sl.bluecloud.ibm.com%2Fprofile%2Fmyapis%2F">IBM API Hub</a> using your IBM ID.</li><br>
 
-<li>In  <u><i><b> API Subscriptions</b></i></u>  section launch  <u><i><b> IBM Marketplace APIs </b></i></u> , If you are not able to see <u><i><b> IBM Marketplace APIs </b></i></u><br>then click on <u><i><b> Visit IBM API Hub </b></i></u> and search for IBM Marketplace APIs and subscribe.</li><br>
-<li>After launching <u><i><b> IBM Marketplace APIs </b></i></u> , you will see <u><i><b> Key management </b></i></u> section where your existing API Key's will be listed.</li><br>
+<li>In  <u><i><b> API Subscriptions</b></i></u>  section, launch  <u><i><b> IBM Marketplace APIs </b></i></u>.  If you are not able to see <u><i><b> IBM Marketplace APIs </b></i></u>,<br>then click on <u><i><b> Visit IBM API Hub </b></i></u> and search for IBM Marketplace APIs and subscribe.</li><br>
+<li>After launching <u><i><b> IBM Marketplace APIs </b></i></u> , you will see <u><i><b> Key management </b></i></u> section, where your existing API Keys will be listed.</li><br>
 
-<li>If no key's listed then use <u><i><b> Generate API Key </b></i></u> button and create new key.</li><br>
+<li>If no keys listed, then click on <u><i><b> Generate API Key </b></i></u> button and create a new key.</li><br>
 
 <li>Copy the <u><i><b> Client ID </b></i></u> and <u><i><b> Client secret </b></i></u> by expanding the key from the list.</li>
 </ol><br>
 
-<li> First you must click the "Start Terminal" button in order to start a terminal which will execute the next following steps.<br><br>
-Please make sure that you must <b>not close the Terminal</b> after clicking the "Start Terminal" button, as you will not be able to configure the Application in the next step.</li><br>
+<li> After obtaining API credentials, get the application code by clicking the "Clone the Repositry" button. </li><br>
 
-<a class="button is-dark is-medium" title="Start Terminal" href="didact://?commandId=terminal-for-nodejs-container:new">Start Terminal</a><br><br>
-
-<li>Clone the new sample app by clicking the "Clone the Repo" button. </li><br>
-
-<a class="button is-dark is-medium" title="Clone the repositry" href='didact://?commandId=vscode.didact.sendNamedTerminalAString&text=nodejs%20terminal%201$$cd%20%2Fprojects%20%26%26%20git%20clone%20-b%20playground%20https%3A%2F%2Fgithub.ibm.com%2Fdigital-marketplace%2Fipm-pivot.git' >Clone the Repo</a>
+<a class="button is-dark is-medium" title="Clone the repositry" href='didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-pivot%20%26%26%20git%20clone%20-b%20playground%20https%3A%2F%2Fgithub.ibm.com%2Fdigital-marketplace%2Fipm-pivot.git' >Clone the Repositry</a>
 <br><br>
 
-<li>Then you must configure the Application by clicking "Configure the Application" button, which will create a <b>.env</b> file to enter your API credentials i.e Client_ID and Client_Secret.</li><br/>
+<li>Now click on the "Build Application" button.</li><br/>
 
-<a class="button is-dark is-medium" title="Configure the Appilication" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=nodejs%20terminal%201$$cd%20ipm-pivot%20%26%26%20cp%20%20.env.stage%20.env%20%26%26%20npm%20install%20%26%26%20npm%20install%20--save-dev%20nodemon&completion=The%20.env%20file%20is%20created">Configure the Application</a><br><br>
+<a class="button is-dark is-medium" title="Build Appilication" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-pivot%20%26%26%20touch%20.env%20%26%26%20printf%20%22%23%20IBM%20Marketplace%20API%20CLIENT_ID%5CnCLIENT_ID%3D%5Cn%5Cn%23%20IBM%20Marketplace%20CLIENT_SECRET%5CnCLIENT_SECRET%3D%22%20%3E%3E%20.env%20%26%26%20npm%20install&completion=The%20.env%20file%20is%20created">Build Application</a><br><br>
 
-<li>Now, you must open the file by clicking the  "Open the File" button in order to enter the API Credentials in the <b>.env</b> file.</li>
+<li>Next click the "Configure Application" button in order to enter the API Credentials i.e. Client_ID and Client_Secret in the <b>.env</b> file.</li>
 <br>
 
-<a class="button is-dark is-medium" title="Open the File" href="didact://?commandId=file-search.openFile&projectFilePath=ipm-pivot/.env">Open the File</a>
+<a class="button is-dark is-medium" title="Configure Application" href="didact://?commandId=file-search.openFile&projectFilePath=ipm-pivot/.env">Configure Application</a>
 <br><br>
 
-<li>You must verify the required configurations before launching the sample application.</li><br><br>
+<li>You must verify the required configurations before launching the application by clicking the "Validate all Requirements" button.</li><br><br>
 
 | Requirement (Click to Verify)  | Status |
 | :--- | :--- |
@@ -155,33 +154,47 @@ Please make sure that you must <b>not close the Terminal</b> after clicking the 
 
 <br>
 
-<a class="button is-dark is-medium" href='didact://?commandId=vscode.didact.validateAllRequirements' title='Validate all requirements!'>Validate all Requirements at Once!</a>
+<a class="button is-dark is-medium" href='didact://?commandId=vscode.didact.validateAllRequirements' title='Validate all requirements'>Validate all Requirements</a>
 <br><br>
 
-<li> Once you have configured the Application and completed entering the API credentials, then launch the application by clicking the "Launch the App" button.</li><br/>
-<a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=nodejs%20terminal%201$$ps -ef| grep 'npm\|./bin/www' | awk 'NR==1 || NR==2 || NR==3 || NR==4{print $2}'| xargs kill -9;npm%20run%20start-dev&completion=The%20application%20has%20been%20launched.">Launch the App</a><br><br>
+<li> Once you have configured the Application with the API credentials in the <b>.env</b> file, then launch the application by clicking the "Launch Application" button.</li><br/>
+<a class="button is-dark is-medium" title="Launch Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-pivot%20%26%26%20ps -ef| grep 'npm\|./bin/www' | awk 'NR==1 || NR==2'| xargs kill -9;npm%20run%20start&completion=The%20application%20has%20been%20launched.">Launch Application</a><br><br>
 
-<p>You will see a dialog box saying " The application has been launched." </p><br>
-
-
-<li>Now, You can Stop the Application by clicking the "Stop the App" button. If you want to Launch the app again you can click "Launch the App" button.</li><br>
-<a class="button is-dark is-medium" title="Stop the app" href="didact://?commandId=vscode.didact.sendNamedTerminalCtrlC&text=nodejs%20terminal%201$$npm%20run%20start-dev" >Stop the App</a>
-<br><br>
-
+<p>You will see a dialogue box with a message <b>"A process is now listening on port 3000. External URL is https://container-url.com"</b>. <br><br> Click the "Open Link" button. You will see your application in the Preview Tab.</p>
+<br>
 </ol>
-<br/>
 
 
+<ol>
+<h4>Customize Your Application</h4>
 
-<ul>
-<li>
-<a class="user_exp" title="IBM Configuration for Partner Marketplace Integration" href="didact://?commandId=vscode.didact.startDidact&projectFilePath=/ipm-pivot/Readme2.didact.md">IBM Configuration for Partner Marketplace Integration
-<span class="icon">
-    <i class="fas fa-arrow-right is-large"></i>
-  </span>
-</a>
-</li>
-</ul>
+<p>You have successfully launched the application. Now, you can now customize your application by making changes in the given application code and rebuild the application. In order to view your customized application, it is required to follow the given steps below.</p>
+
+<ol>
+
+<li>Make the code changes in the desired file(s) of the given application code which is present in the Explorer.</li>
+<br>
+
+<li>Next stop the Application by clicking the "Stop Application" button.</li><br>
+<a class="button is-dark is-medium" title="Stop Application" href="didact://?commandId=vscode.didact.sendNamedTerminalCtrlC&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-pivot%20%26%26%20npm%20run%20start-dev" >Stop Application</a>
+<br>
+<br>
+
+<li>Now click the "Rebuild & Launch Application" button.</li><br>
+<a class="button is-dark is-medium" title="Rebuild & Launch Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-pivot%20%26%26%20ps -ef| grep 'npm\|./bin/www' | awk 'NR==1 || NR==2'| xargs kill -9;npm%20run%20build-clean%20%26%26%20npm%20run%20build-client%20%26%26%20npm%20run%20start" >Rebuild & Launch Application</a>
+<br><br>
+
+<p>You will see a dialogue box with a message <b>"A process is now listening on port 3000. External URL is https://container-url.com"</b>. <br><br> Click the "Open Link" button. This time you will need to refresh the url in the Preview tab to see your application with the code changes.</p>
+<br>
+</ol>
+</ol>
+
+
+<p>To understand more details about the interactions of APIs within the appliction, click <a class="user_exp" title="IBM Configuration for Partner Marketplace Integration" href="didact://?commandId=vscode.didact.startDidact&projectFilePath=/ipm-pivot/Readme2.didact.md">IBM Configuration for Partner Marketplace Integration</a>.</p>
+<br>
+<br>
+
+<p>If you have some interesting ideas and you would like to contribute, please check out the project on <a class="user_exp" href="https://github.com/IBM/ipm-marketplace-app">IPM Marketplace App Github</a>, where new ideas are welcomed and feel free to <a class="user_exp" href="https://github.com/IBM/ipm-marketplace-app/issues">submit feature requests, submit pull requests for codes, log bugs and so on</a>.</p>
 
 
 <br><br><br>
