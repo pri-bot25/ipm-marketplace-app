@@ -6,7 +6,7 @@
 "use strict";
 var https = require("../util/https");
 
-const marketplaceURL = process.env.SA_URL;
+const marketplaceURL = process.env.SA_URL || "https://dev.api.ibm.com/marketplace/test/v2";
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 
