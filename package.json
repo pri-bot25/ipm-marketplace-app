@@ -9,7 +9,7 @@
     "pretest": "eslint .",
     "test": "eslint .",
     "client": "react-scripts start",
-    "build-clean":"rm -rf /build",
+    "build-clean": "rm -rf /build",
     "build-client": "react-scripts build",
     "test-client": "react-scripts test",
     "eject-client": "react-scripts eject",

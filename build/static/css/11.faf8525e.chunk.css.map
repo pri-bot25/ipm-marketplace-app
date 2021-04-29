@@ -1,0 +1,1 @@
+{"version":3,"sources":["Container.scss","Switch.css"],"names":[],"mappings":"AAAA,WAEE,gBAAiB,CACjB,eAAgB,CCHlB,cACE,gBACF","file":"11.faf8525e.chunk.css","sourcesContent":[".container {\n  // margin-top: 3rem;\n  padding-top: 3rem;\n  min-height: 90vh;\n}\n",".switch-error {\n  max-width: 100rem;\n}"]}

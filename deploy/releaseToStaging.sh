@@ -36,8 +36,8 @@ number_of_instances=1
 
 yes|cp -r deploy/manifest.yml deploy/manifest-stage.yml
 sed -i "s/  domain: mybluemix.net/  domain: $domainname/g" deploy/manifest-stage.yml
-sed -i "s/  host: ipm-pivot-stage/  host: $temp_inst/g" deploy/manifest-stage.yml
-sed -i "s/- name: ipm-pivot-stage/- name: $temp_inst/g" deploy/manifest-stage.yml
+sed -i "s/  host: ipm-marketplace-app-stage/  host: $temp_inst/g" deploy/manifest-stage.yml
+sed -i "s/- name: ipm-marketplace-app-stage/- name: $temp_inst/g" deploy/manifest-stage.yml
 sed -i "s/  instances: 1/  instances: $number_of_instances/g" deploy/manifest-stage.yml
 
 
@@ -79,7 +79,7 @@ $(ibmcloud cf apps | grep -q $primary_inst_app_name);
 errorCode=$?
 
 if [ $errorCode == 0 ]; then
-        # Create a new temp app(Green) for ipm-pivot
+        # Create a new temp app(Green) for ipm-marketplace-app
         ibmcloud cf push -f deploy/manifest-stage.yml
         errorCode=$?
         if [ $errorCode != 0 ]; then
@@ -126,7 +126,7 @@ if [ $errorCode == 0 ]; then
                 echo "Command \"ibmcloud cf rename $temp_inst $primary_inst_app_name\" failed."
                 exit $errorCode
         fi
-        echo "Blue-green deployment for ipm-pivot app successful."
+        echo "Blue-green deployment for ipm-marketplace-app app successful."
 else
         echo "$primary_inst_app_name is not available in space $bluemix_space of Organisation $bluemix_org in Bluemix. Hence cannot continue with blue-green deployment."        
         exit $errorCode

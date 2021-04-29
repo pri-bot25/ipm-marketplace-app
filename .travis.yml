@@ -18,9 +18,9 @@ script:
 
   # Define the production tag
   - productionBuild=false;
-  - if [ $TRAVIS_REPO_SLUG == 'digital-marketplace/ipm-pivot' ] && [ $TRAVIS_PULL_REQUEST == 'false' ]; then export productionBuild=true; fi
+  - if [ $TRAVIS_REPO_SLUG == 'IBM/ipm-marketplace-app' ] && [ $TRAVIS_PULL_REQUEST == 'false' ]; then export productionBuild=true; fi
 
-  - if [ $productionBuild == "true" ] && [ $TRAVIS_BRANCH == "master" ]; then . deploy/releaseToStaging.sh commerce-platform m-serviceaggregator-stage https://api.ng.bluemix.net mybluemix.net ipm-pivot-stage ipm-pivot-stage; fi
+  - if [ $productionBuild == "true" ] && [ $TRAVIS_BRANCH == "master" ]; then . deploy/releaseToStaging.sh commerce-platform m-serviceaggregator-stage https://api.ng.bluemix.net mybluemix.net ipm-marketplace-app-stage ipm-marketplace-app-stage; fi
 
-  - if [ $productionBuild == "true" ] && [ $TRAVIS_BRANCH == "dev" ]; then . deploy/releaseToDev.sh commerce-platform m-serviceaggregator-stage https://api.ng.bluemix.net mybluemix.net ipm-pivot-dev ipm-pivot-dev; fi
+  - if [ $productionBuild == "true" ] && [ $TRAVIS_BRANCH == "dev" ]; then . deploy/releaseToDev.sh commerce-platform m-serviceaggregator-stage https://api.ng.bluemix.net mybluemix.net ipm-marketplace-app-dev ipm-marketplace-app-dev; fi
 

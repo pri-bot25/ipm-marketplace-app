@@ -88,7 +88,7 @@ ol,ul,li{
 <h2 class="title is-3 ">IBM Configuration for Partner Marketplace Integration</h2>
 <br/><br/>
 
-<a class="user_exp" title="Business Cases for Partner Marketplace" href="didact://?commandId=vscode.didact.startDidact&projectFilePath=/ipm-pivot/Readme.didact.md"><span class="icon">
+<a class="user_exp" title="Business Cases for Partner Marketplace" href="didact://?commandId=vscode.didact.startDidact&projectFilePath=/ipm-marketplace-app/Readme.didact.md"><span class="icon">
     <i class="fas fa-arrow-left is-large"></i>
   </span>
   Business Cases for Partner Marketplace

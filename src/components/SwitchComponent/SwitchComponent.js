@@ -1,8 +1,9 @@
+/*
 #
 # Copyright 2020- IBM Inc. All rights reserved
 # SPDX-License-Identifier: Apache2.0
 #
-
+*/
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
