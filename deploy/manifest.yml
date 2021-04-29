@@ -1,8 +1,0 @@
----
-applications:
-- name: ipm-marketplace-app-stage
-  memory: 256M
-  host: ipm-marketplace-app-stage
-  instances: 1
-  path: ../
-  domain: mybluemix.net
