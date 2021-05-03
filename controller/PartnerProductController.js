@@ -54,7 +54,7 @@ exports.getPlansByPartnerProductId = async function (req, res, next) {
 exports.createOrder = async function (req, res, next) {
     const { ipmConfigID, orderReferenceNumber } = req.params;
 
-    const host = process.env.SA_URL || "https://dev.api.ibm.com/marketplace/test/v2";
+    const host = process.env.SA_URL;
     const clientId = process.env.CLIENT_ID;
     const clientSecret = process.env.CLIENT_SECRET;
 
