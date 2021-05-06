@@ -85,14 +85,17 @@ ol,ul,li{
 </style>
 <body style="font-family: 'IBM Plex Sans', sans-serif;background-color:#1a1a1a;">
 <div style="font-family: 'IBM Plex Sans', sans-serif;background-color:#1a1a1a;">
-<h2 class="title is-3 ">IBM Configuration for Partner Marketplace Integration</h2>
-<br/><br/>
 
 <a class="user_exp" title="Business Cases for Partner Marketplace" href="didact://?commandId=vscode.didact.startDidact&projectFilePath=/ipm-marketplace-app/Readme.didact.md"><span class="icon">
     <i class="fas fa-arrow-left is-large"></i>
   </span>
   Business Cases for Partner Marketplace
 </a>
+
+
+<h2 class="title is-3 ">IBM Configuration for Partner Marketplace Integration<br> </h2>
+
+
 
 <h3>User experience</h3>
 

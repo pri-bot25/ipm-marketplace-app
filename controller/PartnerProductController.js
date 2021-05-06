@@ -54,14 +54,14 @@ exports.getPlansByPartnerProductId = async function (req, res, next) {
 exports.createOrder = async function (req, res, next) {
     const { ipmConfigID, orderReferenceNumber } = req.params;
 
-    const host = process.env.SA_URL;
+    const host = process.env.SA_URL || "https://dev.api.ibm.com/marketplace/test/v2";;
     const clientId = process.env.CLIENT_ID;
     const clientSecret = process.env.CLIENT_SECRET;
 
     const headers = {
         "Content-Type": "application/json",
         "X-IBM-Client-Id": clientId,
-        "X-IBM-Client-Secret": clientSecret,
+        "X-IBM-Client-Secret": clientSecret
     };
 
     const postData = {
@@ -94,8 +94,8 @@ exports.createOrder = async function (req, res, next) {
                 state: "NY",
                 country: "USA",
                 communicationLanguage: "EN",
-                isTelco: false,
-            },
+                isTelco: false
+            }
         ];
 
         reqPromise = axios.post(requestUrl, postData, { headers });
@@ -193,7 +193,7 @@ exports.getToken = async function (params, query, buymore) {
         postData.countryCode = query.countryCode || "USA";
     }
 
-    const marketplaceURL = process.env.SA_URL;
+    const marketplaceURL = process.env.SA_URL || "https://dev.api.ibm.com/marketplace/test/v2";
     const requestUrl = `${marketplaceURL}/reseller/orders/configuration`;
     const clientId = process.env.CLIENT_ID;
     const clientSecret = process.env.CLIENT_SECRET;
@@ -227,9 +227,10 @@ exports.configurePartnerProduct = async function (req, res, next) {
                     Authorization: "Bearer " + jwttoken,
                 };
 
+                const commerceConfigurationURL = process.env.CCP_API || "https://wwwstage.ibm.com/marketplace/purchase/configuration";
                 // Get redirectURL from CCP
                 const redirectURL = await axios.get(
-                    `${process.env.CCP_API}/api/v1/jwt/ipm/checkout-url?target=${target}`,
+                    `${commerceConfigurationURL}/api/v1/jwt/ipm/checkout-url?target=${target}`,
                     {
                         headers,
                     }
@@ -281,7 +282,7 @@ exports.getSubscriptionsByUserId = async function (req, res, next) {
             const { userId } = req.params;
             const clientId = process.env.CLIENT_ID;
             const clientSecret = process.env.CLIENT_SECRET;
-            const marketplaceURL = process.env.SA_URL;
+            const marketplaceURL = process.env.SA_URL || "https://dev.api.ibm.com/marketplace/test/v2";
 
             const headers = {
                 "Content-Type": "application/json",
@@ -351,7 +352,7 @@ exports.configureProductQuoteData = async function (req, res, next) {
 
     if (reqQuery.hasOwnProperty("ipmConfigID")) {
         const ipmConfigID = reqQuery.ipmConfigID;
-        const host = process.env.SA_URL;
+        const host = process.env.SA_URL || "https://dev.api.ibm.com/marketplace/test/v2";
         const requestUrl = `${host}/reseller/orders/configuration/${ipmConfigID}?includePricingEstimates=true`;
 
         const clientId = process.env.CLIENT_ID;

@@ -92,11 +92,9 @@ ol,ul,li{
 
 <body style="font-family: 'IBM Plex Sans', sans-serif;background-color:#1a1a1a;">
 <div style="font-family: 'IBM Plex Sans', sans-serif;background-color:#1a1a1a;">
-<h2 class="title is-3 ">Business Cases for Partner Marketplace</h2>
+<h2 class="title is-3 ">Business Cases for Partner Marketplace<br></h2>
 
-<br/><br/>
-
-<h3>Business Value </h3>
+<h3>Business Value <br> </h3>
 
 <p>The proposed solution plans to address two problems faced with partner marketplaces</p>
 <ul id="ul1">
@@ -110,25 +108,17 @@ ol,ul,li{
 <li>Workflow to capture product  provisioning  details,  by end  customer or reseller</li>
 <li>Expedited  product  introduction  and launch</li>
 </ul>
-</p><br/>
+</p>
 
 <h3>IPM Marketplace Application</h3>
 
+<p>Before going ahead with launching the marketplace application, it is necessary to utilise the <em><b> staging API credentials </b></em> that will be provided in the onboarding email from <em><b>IBM</b></em> since this is a staging environment which will provide the details about the fundamentals i.e. the product configurations and the interactions of Marketplace APIs.</p> 
+
+<p>Hence, it is advised to <em><b> not to utilise the production credentials</b> </em> in the staging environment. </p>
+
 <p>Try out the application</p>
 <ol>
-<li>Before you configure and launch the application, it is necessary to retrieve the API credentials from API Hub by following the steps:<br>
-<ol type='a'>
-<li>Login to <a title= "IBM API Hub" href="https://developer.sl.bluecloud.ibm.com/sso/displayname?lang=en_US&d=https%3A%2F%2Fdeveloper.sl.bluecloud.ibm.com%2Fprofile%2Fmyapis%2F">IBM API Hub</a> using your IBM ID.</li><br>
-
-<li>In  <u><i><b> API Subscriptions</b></i></u>  section, launch  <u><i><b> IBM Marketplace APIs </b></i></u>.  If you are not able to see <u><i><b> IBM Marketplace APIs </b></i></u>,<br>then click on <u><i><b> Visit IBM API Hub </b></i></u> and search for IBM Marketplace APIs and subscribe.</li><br>
-<li>After launching <u><i><b> IBM Marketplace APIs </b></i></u> , you will see <u><i><b> Key management </b></i></u> section, where your existing API Keys will be listed.</li><br>
-
-<li>If no keys listed, then click on <u><i><b> Generate API Key </b></i></u> button and create a new key.</li><br>
-
-<li>Copy the <u><i><b> Client ID </b></i></u> and <u><i><b> Client secret </b></i></u> by expanding the key from the list.</li>
-</ol><br>
-
-<li> After obtaining API credentials, get the application code by clicking the "Clone the Repositry" button. </li><br>
+<li> After obtaining staging API credentials, get the application code by clicking the "Clone the Repositry" button. </li><br>
 
 <a class="button is-dark is-medium" title="Clone the repositry" href='didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$git%20clone%20-b%20playground%20https%3A%2F%2Fgithub.com%2FIBM%2Fipm-marketplace-app.git%20%26%26%20cd%20${CHE_PROJECTS_ROOT}/ipm-marketplace-app%20%26%26%20touch%20.env%20%26%26%20printf%20%22%23%20IBM%20Marketplace%20API%20CLIENT_ID%5CnCLIENT_ID%3D%5Cn%5Cn%23%20IBM%20Marketplace%20CLIENT_SECRET%5CnCLIENT_SECRET%3D%22%20%3E%20.env' >Clone the Repositry</a>
 <br><br>
@@ -190,14 +180,14 @@ ol,ul,li{
 </ol>
 </ol>
 
+<ul>
 
 <p>To understand more details about the interactions of APIs within the appliction, click <a class="user_exp" title="IBM Configuration for Partner Marketplace Integration" href="didact://?commandId=vscode.didact.startDidact&projectFilePath=/ipm-marketplace-app/Readme2.didact.md">IBM Configuration for Partner Marketplace Integration</a>.</p>
-<br>
 <br>
 
 <p>If you have some interesting ideas and you would like to contribute, please check out the project on <a class="user_exp" href="https://github.com/IBM/ipm-marketplace-app">IPM Marketplace App Github</a>, where new ideas are welcomed and feel free to <a class="user_exp" href="https://github.com/IBM/ipm-marketplace-app/issues">submit feature requests, submit pull requests for codes, log bugs and so on</a>.</p>
 
-
+</ul>
 <br><br><br>
 
 
