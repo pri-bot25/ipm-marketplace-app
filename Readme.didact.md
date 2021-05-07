@@ -131,7 +131,7 @@ ol,ul,li{
 
 <li>Now click on the "Build Application" button.</li><br/>
 
-<a class="button is-dark is-medium" title="Build Appilication" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-marketplace-app%20%26%26%20touch%20.env%20%26%26%20printf%20%22%5Cn%5Cn%23%20CCP%20API%20url%5CnCCP_API%3Dhttps%3A%2F%2Fwwwstage.ibm.com%2Fmarketplace%2Fpurchase%2Fconfiguration%5Cn%5Cn%23%20Staging%20IBM%20Marketplace%20API%20url%5CnSA_URL%3Dhttps%3A%2F%2Fdev.api.ibm.com%2Fmarketplace%2Ftest%2Fv2%22%20%3E%3E%20.env%20%26%26%20npm%20install&completion=The%20.env%20file%20is%20created">Build Application</a><br><br>
+<a class="button is-dark is-medium" title="Build Appilication" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-marketplace-app%20%26%26%20npm%20install&completion=The%20.env%20file%20is%20created">Build Application</a><br><br>
 
 
 <li>You must verify the required configurations before launching the application by clicking the "Validate all Requirements" button.</li><br><br>
