@@ -87,6 +87,9 @@ ol,ul,li{
   font-weight:bold;
   color:#0f62fe;
 }
+.span01{
+  word-spacing: 15px;
+}
 </style>
 </head>
 
@@ -159,23 +162,29 @@ ol,ul,li{
 <ol>
 <h4>Customize Your Application</h4>
 
-<p>You have successfully launched the application. Now, you can now customize your application by making changes in the given application code and rebuild the application. In order to view your customized application, it is required to follow the given steps below.</p>
+<p>Congratulations! You have successfully launched the application. Now, you can customize the application as per your requirements by modifying the application code and rebuild it. In order to customise your application, follow the given steps below.</p>
 
 <ol>
 
-<li>Make the code changes in the desired file(s) of the given application code which is present in the Explorer.</li>
+<li>Make the desired code changes in the the given application code files. <br> <b> USECASE - </b> To change the name of the application.</li>
+<ul>
+<li>Go to the Explorer tab by clicking this <span class="span01"> icon <img src="src/Readme_doc/Explorer_icon.png" alt="explorer_icon" height=40 width=40 /> </span> which will be on the upper left corner <b> (or) </b> you can go to <b><i> View -> Explorer </i></b> which is situated on the top, to view the code files.</li>
+<li>In the explorer, follow the file path <b> <i>ipm-marketplace-app -> src -> static.js </i> </b> and open the file.</li>
+<li>Then you can change the name of the application from <b>"Reseller Portal"</b> to <b>"XYZ Marketplace Portal" </b> and save the file.</li>
+<li>After saving the file, follow the next steps given below. </li>
+</ul>
 <br>
 
-<li>Next stop the Application by clicking the "Stop Application" button.</li><br>
+<li>Click the "Stop Application" button to stop the application</li><br>
 <a class="button is-dark is-medium" title="Stop Application" href="didact://?commandId=vscode.didact.sendNamedTerminalCtrlC&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-marketplace-app%20%26%26%20npm%20run%20start-dev" >Stop Application</a>
 <br>
 <br>
 
-<li>Now click the "Rebuild & Launch Application" button.</li><br>
+<li>Now, click the "Rebuild & Launch Application" button to build and launch the application with updated code changes .</li><br>
 <a class="button is-dark is-medium" title="Rebuild & Launch Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=IPM-Marketplace-App$$cd%20${CHE_PROJECTS_ROOT}/ipm-marketplace-app%20%26%26%20ps -ef| grep 'npm\|./bin/www' | awk 'NR==1 || NR==2'| xargs kill -9;npm%20run%20build-clean%20%26%26%20npm%20run%20build-client%20%26%26%20npm%20run%20start" >Rebuild & Launch Application</a>
 <br><br>
 
-<p>You will see a dialogue box with a message <b>"A process is now listening on port 3000. External URL is https://container-url.com"</b>. <br><br> Click the "Open Link" button. This time you will need to refresh the url in the Preview tab to see your application with the code changes.</p>
+<p>You will see a dialogue box with a message <b>"A process is now listening on port 3000. External URL is https://container-url.com"</b>. <br><br> Click the "Open Link" button. In the Preview tab, refresh the url link to see your application with the code changes. <br>You will notice in the Preview Tab, the application name is changed from <b>Reseller Portal</b> to <b>XYZ Marketplace Portal</b>. </p>
 <br>
 </ol>
 </ol>

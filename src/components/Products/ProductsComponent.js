@@ -83,7 +83,7 @@ export default function ProductsComponent(props) {
                     <Row>
                         <Column style={{ margin: "0 20px" }}>
                             <p>
-                                Click Show Plan to view plan for desired product
+                                Click Show Plans to view plan for desired product
                             </p>
                         </Column>
                     </Row>
