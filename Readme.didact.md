@@ -88,7 +88,7 @@ ol,ul,li{
   color:#0f62fe;
 }
 .span01{
-  word-spacing: 15px;
+  word-spacing: 10px;
 }
 </style>
 </head>
@@ -168,7 +168,7 @@ ol,ul,li{
 
 <li>Make the desired code changes in the the given application code files. <br> <b> USECASE - </b> To change the name of the application.</li>
 <ul>
-<li>Go to the Explorer tab by clicking this <span class="span01"> icon <img src="src/Readme_doc/Explorer_icon.png" alt="explorer_icon" height=40 width=40 /> </span> which will be on the upper left corner <b> (or) </b> you can go to <b><i> View -> Explorer </i></b> which is situated on the top, to view the code files.</li>
+<li>Go to the Explorer tab by clicking this <span class="span01"> icon <img src="src/Readme_doc/explorer_2.png" alt="explorer_icon" height=40 width=40 /> </span> which will be on the upper left corner <b> (or) </b> you can go to <b><i> View -> Explorer </i></b> which is situated on the top, to view the code files.</li>
 <li>In the explorer, follow the file path <b> <i>ipm-marketplace-app -> src -> static.js </i> </b> and open the file.</li>
 <li>Then you can change the name of the application from <b>"Reseller Portal"</b> to <b>"XYZ Marketplace Portal" </b> and save the file.</li>
 <li>After saving the file, follow the next steps given below. </li>
