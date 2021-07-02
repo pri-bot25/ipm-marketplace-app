@@ -1,8 +1,9 @@
+/*
 #
 # Copyright 2020- IBM Inc. All rights reserved
 # SPDX-License-Identifier: Apache2.0
 #
-
+*/
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";

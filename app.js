@@ -1,8 +1,9 @@
+/*
 #
 # Copyright 2020- IBM Inc. All rights reserved
 # SPDX-License-Identifier: Apache2.0
 #
-
+*/
 "use strict";
 require("dotenv").config();
 var createError = require("http-errors");
